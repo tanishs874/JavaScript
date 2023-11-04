@@ -32,3 +32,25 @@ const myFunction = function(){
 }
 
 console.log(typeof anotherId);//->type of is Symbol
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+/*
+Stack(Primitive) , Heap(Non-Primitive)
+*/
+
+let myname = "Tanish Sharma"
+let anothername = myname
+
+anothername = "Tanish"
+console.log(myname)//->Tanish sharma
+console.log(anothername)//->Tanish
+
+let userone =  {
+    email: "userone@google.com",
+    upi: "userone@ybl",
+}
+let usertwo = userone
+
+usertwo.email = "tanish@google.com"
+console.log(userone.email)
+console.log(usertwo.email)
